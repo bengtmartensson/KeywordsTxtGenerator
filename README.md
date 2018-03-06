@@ -14,4 +14,4 @@ For convenience, a Makefile is also supplied. There are two way to use this:
 2. Unpack anywhere, and type `make `_Arduino-project-dir_`/keywords.txt`,
 (where _Arduino-project-dir_ denotes the Arduino project).
 
-This project is in the public domain.
+This project is in the public domain. ([CC0](https://creativecommons.org/publicdomain/zero/1.0/))
