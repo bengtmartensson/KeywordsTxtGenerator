@@ -1,9 +1,10 @@
 # Makefile for use with KeywordsTxtGenerator
 
+KEYWORDS_TXT_GENERATOR_DIR = $(PWD)
 DOXYGEN := doxygen
-DOXYFILE := $(PWD)/keywords_txt_generator.doxy
+DOXYFILE := $(KEYWORDS_TXT_GENERATOR_DIR)/keywords_txt_generator.doxy
 XSLTPROC := xsltproc
-TRANSFORMATION := $(PWD)/doxygen2keywords.xsl
+TRANSFORMATION := $(KEYWORDS_TXT_GENERATOR_DIR)/doxygen2keywords.xsl
 
 keywords.txt: xml/index.xml
 	$(XSLTPROC) $(TRANSFORMATION) $< > $@
